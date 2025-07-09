@@ -132,15 +132,24 @@ All colors MUST be HSL.
   /* Mystical Button Variants */
   .btn-mystical {
     @apply bg-primary text-primary-foreground px-8 py-4 rounded-lg font-semibold text-lg;
-    @apply hover:shadow-glow transform hover:scale-105 transition-all duration-300;
+    @apply transform transition-all duration-300;
     background: var(--gradient-gold);
     box-shadow: var(--shadow-mystical);
+  }
+
+  .btn-mystical:hover {
+    box-shadow: var(--shadow-glow);
+    transform: scale(1.05);
   }
 
   .btn-mystical-outline {
     @apply border-2 border-primary text-primary px-6 py-3 rounded-lg font-semibold;
     @apply hover:bg-primary hover:text-primary-foreground transition-all duration-300;
-    @apply hover:shadow-glow transform hover:scale-105;
+    @apply transform hover:scale-105;
+  }
+
+  .btn-mystical-outline:hover {
+    box-shadow: var(--shadow-glow);
   }
 
   /* Mystical Card */
