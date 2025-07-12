@@ -86,19 +86,43 @@ const OdusVIP = () => {
           </p>
 
           {/* VSL Container */}
-          <div className="max-w-3xl mx-auto mb-8 fade-in">
-            <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-mystical">
-              <script src="https://fast.wistia.com/player.js" async></script>
-              <script src="https://fast.wistia.com/embed/mo4cbfio4e.js" async type="module"></script>
-              <style dangerouslySetInnerHTML={{
-                __html: `wistia-player[media-id='mo4cbfio4e']:not(:defined) { 
-                  background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/mo4cbfio4e/swatch'); 
-                  display: block; 
-                  filter: blur(5px); 
-                  padding-top:177.78%; 
-                }`
-              }} />
-              <wistia-player media-id="mo4cbfio4e" aspect="0.5625"></wistia-player>
+          <div className="max-w-lg mx-auto mb-8 fade-in">
+            <div className="relative w-full rounded-lg overflow-hidden shadow-mystical" style={{ aspectRatio: '9/16' }}>
+              <div 
+                className="wistia_responsive_padding" 
+                style={{ padding: '177.78% 0 0 0', position: 'relative' }}
+              >
+                <div 
+                  className="wistia_responsive_wrapper" 
+                  style={{ height: '100%', left: 0, position: 'absolute', top: 0, width: '100%' }}
+                >
+                  <div 
+                    className="wistia_embed wistia_async_mo4cbfio4e seo=true videoFoam=true" 
+                    style={{ height: '100%', position: 'relative', width: '100%' }}
+                  >
+                    <div 
+                      className="wistia_swatch" 
+                      style={{
+                        height: '100%',
+                        left: 0,
+                        opacity: 0,
+                        overflow: 'hidden',
+                        position: 'absolute',
+                        top: 0,
+                        transition: 'opacity 200ms',
+                        width: '100%'
+                      }}
+                    >
+                      <img 
+                        src="https://fast.wistia.com/embed/medias/mo4cbfio4e/swatch" 
+                        style={{ filter: 'blur(5px)', height: '100%', objectFit: 'contain', width: '100%' }} 
+                        alt="" 
+                        aria-hidden="true" 
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
 
@@ -224,19 +248,43 @@ const OdusVIP = () => {
             <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-6">
               Veja Alguns Depoimentos
             </h2>
-            <div className="max-w-2xl mx-auto mb-8">
-              <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-mystical">
-                <script src="https://fast.wistia.com/player.js" async></script>
-                <script src="https://fast.wistia.com/embed/wann4rdobd.js" async type="module"></script>
-                <style dangerouslySetInnerHTML={{
-                  __html: `wistia-player[media-id='wann4rdobd']:not(:defined) { 
-                    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/wann4rdobd/swatch'); 
-                    display: block; 
-                    filter: blur(5px); 
-                    padding-top:176.67%; 
-                  }`
-                }} />
-                <wistia-player media-id="wann4rdobd" aspect="0.5660377358490566"></wistia-player>
+            <div className="max-w-lg mx-auto mb-8">
+              <div className="relative w-full rounded-lg overflow-hidden shadow-mystical" style={{ aspectRatio: '9/16' }}>
+                <div 
+                  className="wistia_responsive_padding" 
+                  style={{ padding: '177.78% 0 0 0', position: 'relative' }}
+                >
+                  <div 
+                    className="wistia_responsive_wrapper" 
+                    style={{ height: '100%', left: 0, position: 'absolute', top: 0, width: '100%' }}
+                  >
+                    <div 
+                      className="wistia_embed wistia_async_wann4rdobd seo=true videoFoam=true" 
+                      style={{ height: '100%', position: 'relative', width: '100%' }}
+                    >
+                      <div 
+                        className="wistia_swatch" 
+                        style={{
+                          height: '100%',
+                          left: 0,
+                          opacity: 0,
+                          overflow: 'hidden',
+                          position: 'absolute',
+                          top: 0,
+                          transition: 'opacity 200ms',
+                          width: '100%'
+                        }}
+                      >
+                        <img 
+                          src="https://fast.wistia.com/embed/medias/wann4rdobd/swatch" 
+                          style={{ filter: 'blur(5px)', height: '100%', objectFit: 'contain', width: '100%' }} 
+                          alt="" 
+                          aria-hidden="true" 
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
