@@ -87,10 +87,19 @@ const OdusVIP = () => {
 
           {/* VSL Container */}
           <div className="max-w-3xl mx-auto mb-8 fade-in">
-            <VSLEmbed 
-              videoId="dQw4w9WgXcQ"
-              title="Ritual Odus VIP - Revelação Completa"
-            />
+            <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-mystical">
+              <script src="https://fast.wistia.com/player.js" async></script>
+              <script src="https://fast.wistia.com/embed/mo4cbfio4e.js" async type="module"></script>
+              <style dangerouslySetInnerHTML={{
+                __html: `wistia-player[media-id='mo4cbfio4e']:not(:defined) { 
+                  background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/mo4cbfio4e/swatch'); 
+                  display: block; 
+                  filter: blur(5px); 
+                  padding-top:177.78%; 
+                }`
+              }} />
+              <wistia-player media-id="mo4cbfio4e" aspect="0.5625"></wistia-player>
+            </div>
           </div>
 
           {/* CTA Button */}
@@ -211,6 +220,26 @@ const OdusVIP = () => {
       {/* Testimonials Section */}
       <section className="py-20 px-4 bg-card">
         <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-playfair font-bold text-primary mb-6">
+              Veja Alguns Depoimentos
+            </h2>
+            <div className="max-w-2xl mx-auto mb-8">
+              <div className="relative w-full aspect-video rounded-lg overflow-hidden shadow-mystical">
+                <script src="https://fast.wistia.com/player.js" async></script>
+                <script src="https://fast.wistia.com/embed/wann4rdobd.js" async type="module"></script>
+                <style dangerouslySetInnerHTML={{
+                  __html: `wistia-player[media-id='wann4rdobd']:not(:defined) { 
+                    background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/wann4rdobd/swatch'); 
+                    display: block; 
+                    filter: blur(5px); 
+                    padding-top:176.67%; 
+                  }`
+                }} />
+                <wistia-player media-id="wann4rdobd" aspect="0.5660377358490566"></wistia-player>
+              </div>
+            </div>
+          </div>
           <FakeTestimonials />
         </div>
       </section>
